@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Representación Avanzada</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        /*reset*/
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        a {
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        body {
+            font-size: 13px;
+            font-family: 'Montserrat';
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            color: #B59281;
+            background-color: #ffffff;
+            background-image: url(img/Pattern.svg);
+            background-size: contain;
+            height: 10%;
+            width: auto;
+            padding: 4% 2% 2% 2%;
+            text-align: left;
+
+        }
+
+        h1 {
+            font-family: 'Playfair+Display';
+            font-size: 15vw;
+            line-height: 12vw;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        h2 {
+            font-size: 4vw;
+            font-weight: 600;
+            text-align: center;
+
+        }
+
+        h3 {
+            font-size: 3vw;
+            font-weight: 500;
+            text-align: center;
+
+        }
+
+        h4 {
+            font-size: 3vw;
+            font-weight: 1000;
+            color: #F7F6F2;
+            text-align: center;
+
+        }
+
+
+
+        /* índice */
+
+        nav {
+            position: sticky;
+            top: 0;
+            
+            width: 100%;
+            background-color: #B59281;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            /* ajustes texto índice */
+        }
+
+        nav a {
+            color: #ffffff;
+            font-size: 1.4em;
+        }
+
+
+
+        main {
+            background-color: white;
+            padding: 0em 5em 2em 0em;
+        }
+
+        section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 1em 1em 1em 1em;
+            background-color: #B59281;
+            margin: 0 0 0 5px;
+        }
+
+        section figure {
+            height: 300px;
+            background-color: #F7F6F2;
+        }
+
+        section figure img {
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        section figcaption {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2em;
+            margin: 1em 1em;
+        }
+
+        /* apartados trabajos */
+
+
+
+        footer {
+            display: flex;
+            height: 100px;
+            background: #B59281;
+            flex-direction: column;
+            justify-content: space-around;
+            font-weight: 600;
+            align-items: center;
+            padding: 1em 3em 1em 3em;
+
+        }
+
+        footer a {
+            color: #F7F6F2;
+            font-weight: 10em;
+
+            
+        }
+
+        /* color del texto rrss */
+
+        .rrss {
+            display: flex;
+            font-weight: 500;
+            width: 100%;
+            justify-content: space-between;
+
+
+        }
+
+        /* . para enlazar con otro elemento de más abajo */
+
+        .email {
+            display: flex;
+            width: 200%;
+            justify-content: center;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            body {
+                background: #F7F6F2;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (max-width: 600px) {
+            main {
+                background: #F7F6F2;
+            }
+
+            nav {
+                position: sticky;
+                top: 0;
+            }
+
+        }
+
+        h1 {
+            justify-content: center;
+        }
+
+        .grid-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-bottom: auto;
+        }
+
+        /* ajustar cuadrícula */
+
+        section {
+            width: 100%;
+            margin: 1.5em 3em 1em 1em;
+        }
+
+        }
+
+
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            main {
+                background-color: #F7F6F2;
+                justify-content: center;
+
+            }
+
+            nav {
+                position: sticky;
+            }
+
+            h1 {
+                font-size: 8vw;
+                line-height: 8vw;
+                width: 100%;
+                padding: 0 0% 0 00%;
+                text-align: center;
+                justify-content: center;
+
+            }
+
+            h2 {
+                font-size: 6vw;
+                padding: 0 25% 0 25%;
+
+            }
+
+            h3 {
+                font-size: 3vw;
+                padding: 0 25% 0 25%;
+                justify-content: center;
+
+            }
+
+            nav {
+                position: relative;
+                justify-content: center;
+
+            }
+
+            nav a {
+
+                padding: 0 2em;
+
+            }
+
+            .grid-container {
+                padding: 0 0%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            section {
+                width: 100%;
+                margin: 1.5em 3em 1em 1em;
+            }
+
+            footer {
+                flex-direction: row;
+            }
+
+            .rrss {
+                width: 75%;
+                justify-content: space-between;
+            }
+
+            .email {
+                display: flex;
+                font-weight: 100%;
+                width: 20%;
+                justify-content: flex-end;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            body {
+                background: #F7F6F2;
+            }
+
+            nav {
+                position: sticky;
+                top: 0;
+            }
+
+            h1 {
+                font-size: auto;
+                /* que se haga más grande cuando la página 'crezca') */
+                align-content: center;
+            }
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sistemas de <br>representación <br>avanzada</h1>
+        <!--*br para salto de línea-->
+        <h2> EASD Alcoi - 2º Diseño Gráfico</h2>
+        <h3>Marina González Bordonado</h3>
+    </header>
+    <nav>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <!--*para que baje al footer/que luego suba a proyectos (porque el nav está fijo entonces se ve siempre)-->
+    </nav>
+    <main>
+        <a name="proyectos"></a>
+        <!--*conectado con el nav (índice), poner el mismo nombre pero sin #, para que si estás abajo de la pagina le das al nav y te sube hasta arriba de proyectos-->
+        <div class="grid-container">
+            <section>
+                <figure>
+                    <img src="img/p0_sitioweb.png" alt="sitioweb">
+                    <!--*fotos proyectos-->
+
+                </figure>
+                <figcaption>
+                    <h4>p0_sitioweb</h4>
+                </figcaption>
+            </section>
+            <section>
+                <figure>
+                    <img src="img/biografia_web.png" alt="sitioweb">
+                </figure>
+                <figcaption>
+                    <h4>Biografía Saul Bass</h4>
+                </figcaption>
+            </section>
+            <section>
+                <figure>
+                    <img src="img/app_saul_bass.png" alt="App Saul Bass">
+                </figure>
+                <figcaption>
+                    <h4>App Saul Bass</h4>
+                </figcaption>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a name="contacto"></a>
+        <!--*conectado con el nav (índice), poner el mismo nombre pero sin #-->
+        <div class="rrss">
+            <a href="https://www.flickr.com/photos/152278586@N05/" target="_blank">flickr</a>
+            <!--*target="_blank" para que se abra en otra ventana-->
+            <a href="https://www.instagram.com/marinagb.photo/?hl=es" target="_blank">instagram</a>
+            <a href="https://www.youtube.com/channel/UCS3ZXLTIHWxClo9ILiPZftQ" target="_blank">youtube</a>
+        </div>
+        <div class="email">
+            <p><a href="mailto:gonzalezbm@easdalcoi.es">email </a></p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
